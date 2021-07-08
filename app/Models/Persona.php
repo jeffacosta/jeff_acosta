@@ -12,6 +12,10 @@ class Persona extends Authenticatable
 {
     use HasFactory;
 
+
+
+
+
     protected $fillable = [
         'user_id',
         'nombre',
