@@ -22,7 +22,7 @@ class TelefonoTest extends TestCase
          $this->actingAs($user);
  
          $data = [
-             'persona_id' => '',
+             'persona_id' => '145151',
            
              
          ];
