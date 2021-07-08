@@ -8,6 +8,7 @@ use App\Http\Controllers\PersonasController;
 use App\Http\Controllers\CuentaUsuariosController;
 use App\Http\Controllers\TelefonosController;
 use App\Http\Controllers\DeclaracionsController;
+use App\Http\Controllers\ValidacionsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,3 +32,4 @@ Route ::post ('/personas', [PersonasController::class, 'store']);
 Route ::post ('/cuenta_usuarios', [CuentaUsuariosController::class, 'store']);
 Route ::post ('/telefonos', [TelefonosController::class, 'store']);
 Route ::post ('/declaracions', [DeclaracionsController::class, 'store']);
+Route ::post ('/validacions', [ValidacionsController::class, 'store']);
