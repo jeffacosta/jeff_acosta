@@ -51,13 +51,13 @@ class User extends Authenticatable
 
     public function personas(){
         
-        return $this-> hasMany(Persona::class);
+        return $this-> hasOne(Persona::class);
 
     } 
 
     public function cuenta_usuarios(){
         
-        return $this-> hasMany(CuentaUsuario::class);
+        return $this-> hasOne(CuentaUsuario::class);
 
     } 
 
