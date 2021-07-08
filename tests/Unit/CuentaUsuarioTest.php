@@ -15,8 +15,6 @@ class CuentaUsuarioTest extends TestCase
     public function Un_Usuario_Tiene_Una_Cuenta()
     {
         $cuentausuario = CuentaUsuario::factory() -> create();
-
-        
         $this-> assertInstanceOf(User::class, $cuentausuario->user);
     }
 }

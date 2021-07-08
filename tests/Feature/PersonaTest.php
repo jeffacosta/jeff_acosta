@@ -17,7 +17,6 @@ class PersonaTest extends TestCase
     {
        //$this ->withoutExceptionHandLing();
 
-       
        $user = User::factory()->create();
 
        $this->actingAs($user);
@@ -27,11 +26,9 @@ class PersonaTest extends TestCase
            'primerApellido' => 'Aleman',
            'segundoApellido' => 'Alfaro',
            'unidadAcademica' => 'Director',
-           
        ];
 
        $resp = $this->post('/personas', $data);
-
       
       $resp-> assertSessionHasErrors(['nombre']);
        

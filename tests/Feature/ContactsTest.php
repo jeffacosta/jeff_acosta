@@ -60,7 +60,6 @@ class ContactsTest extends TestCase
      {
        // $this ->withoutExceptionHandLing();
 
-        
         $user = User::factory()->create();
 
         $this->actingAs($user);

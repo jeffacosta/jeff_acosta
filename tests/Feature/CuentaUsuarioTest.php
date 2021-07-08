@@ -27,12 +27,10 @@ class CuentaUsuarioTest extends TestCase
             'contraseña' => '1234a',
             
         ];
-
         $resp = $this->post('/cuenta_usuarios', $data);
 
        $this->assertTrue(CuentaUsuario::where('correo',$data['correo'])->exists());
        
-        
     }
 
     

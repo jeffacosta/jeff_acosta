@@ -15,7 +15,6 @@ class ValidacionTest extends TestCase
       {
          //$this ->withoutExceptionHandLing();
  
-         
          $user = Declaracion::factory()->create();
  
          $this->actingAs($user);
@@ -25,13 +24,10 @@ class ValidacionTest extends TestCase
              'id_firma'  => '145151',
             
              'departamento'=> 'ciencias',
-           
-             
          ];
  
          $resp = $this->post('/validacions', $data);
  
-        
         $resp-> assertSessionHasErrors(['validacion']);
          
       }

@@ -16,7 +16,6 @@ class TelefonoTest extends TestCase
       {
          //$this ->withoutExceptionHandLing();
  
-         
          $user = Persona::factory()->create();
  
          $this->actingAs($user);
@@ -24,7 +23,6 @@ class TelefonoTest extends TestCase
          $data = [
              'persona_id' => '145151',
            
-             
          ];
  
          $resp = $this->post('/telefonos', $data);

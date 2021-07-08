@@ -36,8 +36,6 @@ class UsersTest extends TestCase
 
         $this->assertDatabaseCount('users',1);
 
-      
-
         $this -> assertDatabaseHas ('users', $data);
        
         

@@ -22,8 +22,8 @@ class ContactsTest extends TestCase
         
         $contact = Contact::factory() -> create();
 
-       
-        
-       $this-> assertInstanceOf(User::class, $contact->user);
+          $this-> assertInstanceOf(User::class, $contact->user);
     }
+        
+    
 }

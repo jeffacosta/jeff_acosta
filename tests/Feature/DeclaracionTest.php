@@ -24,13 +24,11 @@ class DeclaracionTest extends TestCase
         $data = [
             'id_jornada' => '12539',
         
-            
         ];
 
         $resp = $this->post('/declaracions', $data);
 
        $this->assertTrue(Declaracion::where('id_jornada',$data['id_jornada'])->exists());
        
-        
     }
 }
