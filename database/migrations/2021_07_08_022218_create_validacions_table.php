@@ -15,7 +15,7 @@ class CreateValidacionsTable extends Migration
     {
         Schema::create('validacions', function (Blueprint $table) {
             $table->id();
-            $table-> foreignId('id_declaracion');
+            $table-> foreignId('declaracion_id');
             $table-> integer ('id_firma');
             $table-> string ('validacion');
             $table-> string ('departamento');

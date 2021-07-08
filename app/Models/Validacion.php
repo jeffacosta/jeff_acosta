@@ -13,7 +13,7 @@ class Validacion extends Authenticatable
     use HasFactory;
 
     protected $fillable = [
-        'id_declaracion',
+        'declaracion_id',
         'id_firma',
         'validacion',
         'departamento',
