@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Validacion;
 class Declaracion extends Authenticatable
 {
     use HasFactory;
@@ -19,4 +20,10 @@ class Declaracion extends Authenticatable
     {
         return $this-> belongsTo(User::class);
     }
+
+    public function validacions(){
+        
+        return $this-> hasMany(Validacion::class);
+
+    } 
 }

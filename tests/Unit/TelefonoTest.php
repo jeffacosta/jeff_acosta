@@ -18,8 +18,6 @@ class TelefonoTest extends TestCase
         
         $telefono = Telefono::factory() -> create();
 
-       
-        
        $this-> assertInstanceOf(Persona::class, $telefono->persona);
     }
 }

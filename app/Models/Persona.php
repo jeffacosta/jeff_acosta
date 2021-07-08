@@ -36,4 +36,7 @@ class Persona extends Authenticatable
         return $this-> hasMany(Telefono::class);
 
     } 
+    
+
+
 }
