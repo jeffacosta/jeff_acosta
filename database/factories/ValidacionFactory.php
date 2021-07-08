@@ -23,7 +23,7 @@ class ValidacionFactory extends Factory
     public function definition()
     {
         return [
-            'id_declaracion'=>Declaracion::factory(),
+            'declaracion_id'=>Declaracion::factory(),
             'id_firma' => '1235456',
             'validacion' => 'aprobada',
             'departamento' => 'ciencias',
