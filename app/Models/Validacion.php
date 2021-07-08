@@ -7,17 +7,22 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Telefono extends Authenticatable
+
+class Validacion extends Authenticatable
 {
     use HasFactory;
 
     protected $fillable = [
-        'persona_id',
-        'numerotelefono',
+        'id_declaracion',
+        'id_firma',
+        'validacion',
+        'departamento',
     ];
 
-    public function persona ()
+    public function declaracion ()
     {
-        return $this-> belongsTo(Persona::class);
+        return $this-> belongsTo(Declaracion::class);
     }
+
+
 }
