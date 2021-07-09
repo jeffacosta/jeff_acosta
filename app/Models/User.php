@@ -57,14 +57,14 @@ class User extends Authenticatable
 
     public function cuenta_usuarios(){
         
-        return $this-> hasOne(CuentaUsuario::class);
+        return $this-> hasMany(CuentaUsuario::class);
 
     } 
 
 
     public function contacts(){
         
-        return $this-> hasOne(Contact::class);
+        return $this-> hasMany(Contact::class);
 
     } 
 
