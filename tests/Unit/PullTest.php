@@ -11,7 +11,9 @@ class PullTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    
+     /** @test */
+    public function PullTesst()
     {
         $this->assertTrue(true);
     }
