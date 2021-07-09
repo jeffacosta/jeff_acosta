@@ -11,7 +11,7 @@ class ValidacionTest extends TestCase
     use RefreshDatabase;
 
       /** @test */
-      public function un_contacto_requiere_telefono()
+      public function Una_Declaracion_Requiere_Validacion()
       {
          //$this ->withoutExceptionHandLing();
  
